@@ -1,0 +1,20 @@
+{
+  "name": "fuzzy-potato",
+  "description": "Neural networks from the basics",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "npx webpack --config webpack.config.js",
+    "watch": "npx webpack --watch --info-verbosity verbose --config webpack.config.js",
+    "server": "cd dist && set DEBUG=express:* && nodemon src/server.js",
+    "model": "node main.js",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "chart.js": "^2.9.3",
+    "express": "^4.17.1",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^6.0.1"
+  }
+}
