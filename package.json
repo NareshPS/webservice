@@ -5,16 +5,20 @@
   "scripts": {
     "build": "npx webpack --config webpack.config.js",
     "watch": "npx webpack --watch --info-verbosity verbose --config webpack.config.js",
-    "server": "cd dist && set DEBUG=express:* && nodemon src/server.js",
-    "model": "node main.js",
+    "start": "cd dist && set DEBUG=express:* && nodemon src/server.js",
+    "model": "node ./src/main.js",
     "clean": "rm -rf dist"
   },
+
   "dependencies": {
+    "@tensorflow/tfjs-node": "^2.0.0",
     "chart.js": "^2.9.3",
     "express": "^4.17.1",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.15",
+    "mathjs": "^7.0.1",
+    "webpack": "^4.43.0",
+    "copy-webpack-plugin": "^6.0.1"
   },
   "devDependencies": {
-    "copy-webpack-plugin": "^6.0.1"
   }
 }

@@ -1,5 +1,5 @@
 const {Chart} = require('chart.js');
-const {range} = require('lodash');
+const {range, head} = require('lodash');
 
 ResultChart = class {
   constructor(canvas) {
@@ -46,9 +46,14 @@ ResultChart = class {
   }
 
   toChartData(data) {
-    return {
+    return typeof head(data) === 'number'?
+    {
       labels: range(data.length),
       data: data
+    }:
+    {
+      labels: data.map(([x, y]) => x),
+      data: data.map(([x, y]) => y)
     }
   }
 
