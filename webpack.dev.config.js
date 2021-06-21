@@ -2,7 +2,7 @@ const webpack = require('webpack')
 const path = require('path')
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: {
     index: "./public/js/index.js",
   },
@@ -32,7 +32,16 @@ module.exports = {
           }
         }
       },
+      {
+        test: /\.js$/,
+        enforce: 'pre',
+        use: ["source-map-loader"],
+      }
     ],
+  },
+  devtool : 'inline-source-map',
+  devServer: {
+    contentBase: './public/'
   },
   resolve: {
     alias: {
