@@ -1,7 +1,7 @@
 {
-  "name": "fuzzy-potato",
+  "name": "webservice",
   "version": "1.0.0",
-  "description": "In-Browser Experiments",
+  "description": "Web Service Skeleton",
   "main": "src/listen.js",
   "scripts": {
     "start": "cd dist && node src/listen.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NareshPS/fuzzy-potato.git"
+    "url": "git+https://github.com/NareshPS/webservice.git"
   },
   "keywords": [
     "experiments",
@@ -21,9 +21,9 @@
   "author": "NareshPS",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/NareshPS/fuzzy-potato/issues"
+    "url": "https://github.com/NareshPS/webservice/issues"
   },
-  "homepage": "https://github.com/NareshPS/fuzzy-potato#readme",
+  "homepage": "https://github.com/NareshPS/webservice#readme",
   "dependencies": {
     "@babel/preset-env": "^7.14.5",
     "express": "^4.17.1",
@@ -31,7 +31,7 @@
     "pino": "^6.11.3",
     "pino-pretty": "^5.0.2",
     "rxjs": "^7.1.0",
-    "vue": "^2.6.14"
+    "vue": "^3.1.1"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.14.5",
